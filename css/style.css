@@ -1,0 +1,719 @@
+/*about page*/
+.index-body{
+	background: url("../svgs/background2.svg") #192841 no-repeat center fixed;
+	background-size: cover;
+	color: white;
+	overflow-x: hidden;
+
+
+}
+nav{
+	z-index: 100;
+	opacity: 0.8;
+}
+.brand{
+	font-size: 30px !important;
+
+}
+.active{
+	color: gold !important;
+	font-weight: bold;
+}
+.about-text{
+	height: 580px;
+	margin-top: 40px;
+	margin-left: -1000px;
+	animation:  text-animation 2s;
+	animation-fill-mode: forwards;
+	position: relative;
+	overflow-y: auto;
+}
+
+.about-text h1{
+	font-size: 40px;
+	font-weight: bold;
+}
+.about-text p{
+	font-size: 25px;
+
+}
+.first-p{
+	transform: rotate(1deg);
+}
+.third-p{
+	transform: rotate(-1deg);
+}
+.name{
+	animation: name-color-animation 2s;
+	animation-delay: 4s ;
+	animation-fill-mode: forwards;
+}
+.name-sm{
+	display: none;
+	animation: name-sm-color-animation 2s;
+	animation-delay: 4s ;
+	animation-fill-mode: forwards;
+}
+.name:before{
+	content: "J";
+	width: 0;
+	position: absolute;
+	background: gold;
+	z-index: -1;
+	animation: name-background-animation 2s;
+	animation-delay: 4s ;
+	animation-fill-mode: forwards;
+
+}
+.name-sm:before{
+	content: "J";
+	width: 0;
+	position: absolute;
+	background: gold;
+	z-index: -1;
+	animation: name-sm-background-animation 2s;
+	animation-delay: 4s ;
+	animation-fill-mode: forwards;
+
+}
+
+.skills{
+	animation: skills-highlight-animation 2s;
+	animation-delay: 5s ;
+	animation-fill-mode: forwards;
+}
+
+.qualification{
+	animation: qualification-highlight-animation 4s;
+	animation-delay: 5s ;
+	animation-fill-mode: forwards;
+}
+
+.about-text a{
+	text-decoration: none;
+	padding: 3px;
+	color: white;
+	border-radius: 10px;
+	transition: background 0.5s, color 0.5s;
+	animation: links-color-animation 4s;
+	animation-delay: 5s ;
+	animation-fill-mode: forwards;
+
+}
+
+.about-text a:hover {
+	color: #01579b !important;
+	background: gold;
+	
+}
+.img-div{
+	z-index: -1;
+	margin-top: -1000px;
+	height: 618px;
+	animation: img-div-animation 3s forwards;
+	border: solid 1px white;
+}
+
+.jpn-name{
+	opacity: 0;
+	position: absolute;
+	color: #01579b;
+	top: 250px;
+	margin-left: -40px;
+	transform: rotate(-45deg);
+	font-weight: bold;
+	font-size: 20px;
+	animation: jpn-name-animation 3s forwards;
+	animation-delay: 3s;
+	border-radius: 5px;
+	border: solid 1px #000;
+	padding: 0 5px;
+}
+
+
+.my-image{
+	height: 650px;
+	width: 740px;
+	pointer-events: none;
+	position: absolute;
+	top: 80px;
+	margin-left: +2000px;
+	animation:  image-animation 3s;
+	animation-fill-mode: forwards;
+
+}
+.heart{
+	padding: 5px;
+	color: red;
+	margin-top: -5px;
+	animation: heart-animation 1s infinite;
+	position: absolute;
+
+}
+
+
+@media only screen and (max-width: 992px) {
+
+	.img-div{
+		position: absolute;
+		top: 119px;
+		z-index: -1;
+		width: 400px;
+		height: 650px;
+	}
+	.my-image{
+		top: 0px;
+	}
+	nav{
+		opacity: 1 !important;
+	}
+
+	.about-text {
+		opacity: 0.8;
+		background: #000 ;
+		height: 650px;
+		border-radius: 0 0 0 20px;
+		z-index: 0;
+		border-radius: 0 100px 0 0;
+	}
+
+}
+@media only screen and (max-width : 511px){
+	.about-text h1{
+		font-size: 30px;
+	}
+	.about-text p{
+		font-size: 22px;
+	
+	}
+	.name{
+		display: none;
+	}
+	.name-sm{
+		display: inline-block;
+	}
+
+
+
+}
+@keyframes jpn-name-animation {
+	100%{opacity: 1;}
+}
+@keyframes text-animation {
+	100%{margin-left: 0px;}
+}
+@keyframes image-animation {
+	100%{margin-left: 0px;}
+}
+@keyframes img-div-animation {
+
+	100%{margin-top: 0px;
+		background: linear-gradient(to bottom, gold, transparent);
+		border-radius: 0px 100px 0px 20px;
+		box-shadow: 0 0 10px white;
+
+	}
+}
+@keyframes name-background-animation{
+	100%{
+		width: 238px;
+	}
+}
+@keyframes name-color-animation{
+	100%{
+		color: #01579b;
+
+	}
+}
+@keyframes name-sm-background-animation{
+	100%{
+		width: 212px;
+	}
+}
+@keyframes name-sm-color-animation{
+	100%{
+		color: #01579b;
+
+	}
+}
+@keyframes skills-highlight-animation{
+	100%{
+		background: red;
+	}
+}
+@keyframes qualification-highlight-animation{
+	100%{
+		background: #fff;
+		color: #000;
+	}
+}
+@keyframes links-color-animation{
+	100%{
+		color: gold;
+
+	}
+}
+@keyframes heart-animation{
+	100%{
+		font-size: 30px;
+		margin-top: -8px;
+	}
+}
+/*my resume page*/
+.resume-body{
+	background: url("../svgs/background3.svg") #192841 no-repeat center fixed;
+	background-size: cover;
+	color: white;
+	overflow-x: hidden;
+
+}
+.download-btn{
+	position: absolute;
+	right: 35px;
+	background: #4CBB17;
+	border: 0;
+	border-radius: 10px;
+	opacity: 0;
+	color: #000!important;
+	animation: download-btn-animation 1s forwards;
+	animation-delay: 5s;
+}
+.download-btn:hover{
+	box-shadow: 0 0 5px #4CBB17;
+	color: white!important;
+	background: #4CBB17!important;
+}
+.cv-image{
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	pointer-events: none;
+}
+.resume-content{
+	width: 90%!important;
+	margin-top: 10px!important;
+}
+
+.resume-content .left-section{
+	margin-top: -1200px;
+	animation: left-section-animation 2s forwards;
+}
+
+.resume-content .right-section{
+	margin-left: +10px!important;
+	margin-top: +1000px;
+	animation: right-section-animation 2s forwards;
+}
+.resume-content a{
+	text-decoration: none;
+	padding: 3px;
+	color: gold;
+	border-radius: 10px;
+	transition: background 0.5s, color 0.5s;
+
+}
+
+.resume-content a:hover {
+	color: #01579b !important;
+	background: gold;
+	
+}
+
+.resume-content .my-name{
+
+	animation: my-name-animation 2s forwards;
+	animation-delay: 4s;
+}
+.resume-content h2{
+	width: fit-content;
+	opacity: 0.9;
+	animation: h2-animation 2s forwards;
+	animation-delay: 2s;
+}
+
+.resume-content p, .resume-content li{
+	font-size: 18px;
+}
+
+.blue-highlight{
+	animation: blue-highlight-animation 2s forwards;
+	animation-delay: 2s;
+}
+.white-highlight{
+	width: fit-content;
+	animation: white-highlight-animation 2s forwards;
+	animation-delay: 2s;
+}
+
+.borders{
+	border: 1px white solid;
+}
+
+.divider{
+	margin-left: -5px!important;
+}
+
+.background-div{
+	width: 95%;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	transform: translate(2.5%,110px);
+	border-radius: 10px;
+	animation: background-div-animation 2s forwards;
+	animation-delay: 2s;
+}
+.background-img{
+	float: right;
+	position: fixed;
+	bottom: 0px;
+	right: -900px;
+	height: 100%;
+	z-index: -2;
+	animation : background-img-animation 3s forwards;
+	animation-delay: 1s;
+}
+@keyframes download-btn-animation{
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes background-img-animation{
+	100%{
+		right: -50px;
+	}
+}
+
+@keyframes left-section-animation{
+	100%{
+		margin-top: 0;
+	}
+}
+@keyframes right-section-animation{
+	100%{
+		margin-top: 0;
+	}
+}
+@keyframes my-name-animation{
+	100%{
+		background: yellow;
+		color: #01579b;
+	}
+}
+@keyframes h2-animation{
+	100%{
+		background: red;
+	}
+}
+@keyframes blue-highlight-animation{
+	100%{
+		background: #192841;
+
+	}
+}
+@keyframes white-highlight-animation{
+	100%{
+		background: #fff;
+		color: #000;
+
+	}
+}
+@keyframes background-div-animation{
+	100%{
+		background: #000;
+		box-shadow: 0 0 10px white;
+	}
+}
+/*contact me page*/
+.contact-page{
+	background: url("../svgs/background.svg") #192841 no-repeat center fixed;
+	background-size: cover;
+	color: white;
+	overflow-x: hidden;
+}
+
+p{
+	font-size: 25px;
+}
+.title1{
+	transform: rotate(-1deg);
+}
+.title1-1, .title1-2{
+	background: #01579b;
+}
+.title2{
+	transform: rotate(1deg);
+}
+.title2-1, .title2-2{
+	background: red;
+
+}
+.title2-2{
+	margin-left: 12px;
+}
+
+.phone-icon{
+	color: white;
+	animation: gold-colors-animation 1s forwards;
+	animation-delay: 4s;
+}
+.whatsapp-icon{
+	height: 25px;
+	width: 25px;
+	pointer-events: none;
+}
+.contact-page form{
+}
+.contact-page label{
+	color: white;
+	animation: gold-colors-animation 1s forwards;
+	animation-delay: 4s;
+}
+.contact-page input:hover, .contact-page input:focus {
+	border: solid 1px white;
+	box-shadow: 0px 0px 8px #01579b;
+}
+.contact-page textarea:hover, .contact-page textarea:focus {
+	border: solid 1px white;
+	box-shadow: 0px 0px 8px #01579b;
+}
+.contact-page form button{
+	background: transparent;
+	border:solid 1px white;
+	color: white;
+	animation: btn-colors-animation 1s forwards;
+	animation-delay: 4s;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.contact-page form button:hover{
+	background: gold;
+	color: #01579b!important;
+}
+.qr-code{
+	height: 200px;
+	width: 200px;
+	border-radius: 4px;
+}
+.qr-code:hover{
+	box-shadow: 0 0 10px gold;
+}
+.contact-page .tel, .contact-page .email{
+	text-decoration: none;
+	padding: 3px;
+	color: white;
+	animation: gold-colors-animation 1s forwards;
+	animation-delay: 4s;
+	border-radius: 10px;
+	transition: background 0.5s, color 0.5s;
+
+}
+.contact-page .tel:hover, .contact-page .email:hover{
+	background: gold;
+	color: #01579b!important	;
+}
+.contact-page .container{
+	opacity: 0;
+	animation: contact-page-animation 3s forwards;
+	animation-delay: 1s;
+}
+.contact-page .image {
+	height: 580px;
+	width: 470px;
+	pointer-events: none;
+	position: fixed;
+	top: 35px;
+	left: -640px;
+	animation: contact-image-animation 3s forwards;
+	z-index: -1;
+
+}
+.contact-img-div{
+	background: linear-gradient(to bottom, transparent, gold, transparent, transparent);
+	opacity: 0.8;
+	width: 700px;
+	height: 700px;
+	position: fixed;
+	bottom: 200px;
+	left: 200px;
+	z-index: -2;
+	border-radius: 50%;
+	border: 1px solid white;
+	animation: contact-img-div-animation 3s forwards;
+
+}
+
+@media only screen and (min-width: 992px){
+	.contact-page .right-part{
+		margin-left: 50px!important;
+	}
+}
+@keyframes contact-page-animation{
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes gold-colors-animation{
+	100%{
+		color: gold;
+	}
+}
+@keyframes btn-colors-animation{
+	100%{
+		color: gold;
+		border: solid 1px gold;
+	}
+}
+@keyframes contact-image-animation{
+	100%{
+		left: -30px;
+	}
+}
+@keyframes contact-img-div-animation{
+	100%{
+		bottom: -200px;
+		left: -200px;
+		transform: rotate(-100deg);
+		box-shadow: 0 0 10px white;
+	}
+}
+
+/*projects page*/
+.projects-body{
+	background: url("../svgs/background4.svg") #192841 no-repeat center fixed;
+	background-size: cover;
+	color: white;
+	overflow-x: hidden;
+}
+.projects-body div .row a{
+	text-decoration: none;
+	color: white;
+}
+.projects-body h3, .projects-body h4{
+	margin-top: -150px;
+	animation: projects-h-animation 2s forwards;
+}
+.project{
+	background: #192841;	
+	opacity: 0;
+	padding: 10px;
+	box-shadow: 0 0 8px white;
+	border-radius: 10px;
+	margin: 0 5px 0 5px;
+	transition: box-shadow 0.4s;
+	animation: project-animation 3s forwards;
+	animation-delay: 1s;
+
+
+}
+.project:hover{
+	box-shadow: 0 0 10px gold;
+
+}
+.project-image img{
+	border-radius: 30px;
+	width: 150px;
+	height: 140px;
+}
+.project-description p{
+	font-size: 15px;
+	height: 190px;
+	overflow-y: hidden;
+}
+.project-description p:hover{
+	overflow-y: auto;
+}
+.project-description p:focus{
+	overflow-y: auto;
+}
+.gold-color{
+	color: gold;
+}
+.red-highlight{
+	background: red;
+}
+
+.projects-body .image {
+	height: 520px;
+	width: 900px;
+	pointer-events: none;
+	position: fixed;
+	bottom: 0;
+	right: 50px;
+	z-index: -1;
+	animation:projects-image-animation 3s forwards;
+}
+
+@keyframes project-animation{
+	100%{
+		opacity: 0.9;
+	}
+}
+@keyframes projects-h-animation{
+	100%{
+		margin-top: 0;
+	}
+}
+
+@keyframes projects-image-animation{
+	100%{
+		top: 95px;
+		right: -200px;
+	}
+}
+
+/*exercises page*/
+.exercises-body{
+	background: url("../svgs/background5.svg") #192841 no-repeat center fixed;
+	background-size: cover;
+	color: white;
+	overflow-x: hidden;
+}
+.exercises-body div .row a{
+	text-decoration: none;
+	color: white;
+}
+.exercises-body h3, .exercises-body h4{
+	margin-top: -150px;
+	margin-left: -850px;
+	animation: exercises-h-animation 2s forwards;
+}
+.exercises-body .image {
+	height: 520px;
+	width: 900px;
+	pointer-events: none;
+	position: fixed;
+	bottom: 0px;
+	right: 50px;
+	z-index: -1;
+	animation:projects-image-animation 3s forwards;
+}
+
+.mywork-img-div{
+	position: fixed;
+	width: 2000px ;
+	height: 600px;
+	top: 200px;
+	background: linear-gradient(to bottom, transparent, gold);
+	z-index: -2;
+	opacity: 0;
+	box-shadow: 0 0 10px white;
+	transform: rotate(-10deg);
+	animation: mywork-img-div-animation 5s forwards;
+
+}
+
+@keyframes exercises-h-animation{
+	100%{
+		margin-top: 0;
+		margin-left: 0;
+	}
+}
+@keyframes mywork-img-div-animation{
+	100%{	
+		opacity: 0.9;
+	}
+}
