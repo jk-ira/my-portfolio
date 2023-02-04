@@ -26,7 +26,7 @@
 					<p class="first-p">I am <span class="name">Joa-Kevin Iradukunda</span><span class="name-sm">Joa-Kevin Iradukunda</span>, a <span class="skills">web and mobile developer graduate</span>, currently based in Durban.</p>
 					<p>I have recently completed my <span class="qualification">Bachelor of Science in Information Technology</span>, where I had my first encounter with programming  &#128187;  and I just <b> fell in love with it</b> <span class="heart">&hearts;</span> . </p>
 					<p class="third-p">Please don't hesitate to go through <b><a href="resume.php?curr=resume">My Resume</a></b>, <b><a href="" data-bs-toggle="modal" data-bs-target="#my_work_modal">My Work</a></b>and <b><a href="" data-bs-toggle="modal" data-bs-target="#social_media_modal">My Social Network</a></b>
-					pages to know more about myself, my skills and previous experiences. </p>
+					pages to know more about myself, my skills and my previous experiences. </p>
 					<p>Looking forward to <a href="contact.php?curr=contact">getting in touch</a> with you soon &#x1F609;.</p>
 					<p>Thanks &#9996;.</p>
 			</div>
