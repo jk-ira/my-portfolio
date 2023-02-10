@@ -46,7 +46,7 @@
 						<img src="images/kevin.PNG">
 					</div>
 					<div class=" col-lg-8 project-description">
-						<p class="">This one is <span class="gold-color"><i>my online portfolio</i></span>, the one you are currently visiting.<br> I built it pretty much with the same languages as the first project meaning <span class="red-highlight">HTML, CSS, Javascript, Bootstrap libraries and PHP</span>.</p>
+						<p class="">This one is <span class="gold-color"><i>my online portfolio</i></span>, the one you are currently visiting.<br> I built it pretty much with the same languages as the first project on the list meaning <span class="red-highlight">HTML, CSS, Javascript, Bootstrap libraries and PHP</span>.</p>
 
 					</div>
 				</div>
