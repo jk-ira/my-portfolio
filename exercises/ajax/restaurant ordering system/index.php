@@ -45,7 +45,7 @@ if (isset($_POST["submit"])) {
 	<a href="admin.php" target="-blank"><p>Open the admin dashboard</p></a>
 
 	<div style="font-family: arial; font-size: 25px; height: 150px; width: 200px; margin-left: 100px;">
-		<h1>Ex1</h1>
+		<h1>Ex2</h1>
 	</div>
 
 </body>
