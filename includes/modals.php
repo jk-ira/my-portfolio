@@ -29,6 +29,7 @@
         <a href="https://www.facebook.com/iradukunda.kevin.39" class="btn btn-primary m-2 p-2">Facebook</a>
         <br>
         <a href="https://github.com/jk-ira/" class="btn btn-primary m-2 p-2">Github</a>
+        <a href="https://www.linkedin.com/in/joa-kevin-iradukunda-8a47251b2/" class="btn btn-primary m-2 p-2">LinkedIn</a>
       </div>
     </div>
   </div>

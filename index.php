@@ -31,7 +31,7 @@
 					<p>Thanks &#9996;.</p>
 			</div>
 			<!-- add the modal for my work pop u -->
-					<?php include("includes/my_work_modal.php");?>
+					<?php include("includes/modals.php");?>
 			<div class=" img-div col-lg-5">
 				<span class="jpn-name">丁口卂-长乇リ工𠘨  工尺卂刀凵长凵𠘨刀卂</span>
 				<img class="my-image" src="images/kevin3.png">
